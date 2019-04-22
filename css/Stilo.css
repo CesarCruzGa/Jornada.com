@@ -1,0 +1,415 @@
+body{
+	background: #fff;
+	padding-left:3%;
+  padding-right: 2%;
+}
+
+ /*menu*/
+ 
+
+
+#main-header {
+	background: #333;
+	color: white;
+	height: 90px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: fixed;
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 2em;
+	}
+	
+	#logo-header .site-desc {
+		font-family: "Poppins", Arial, sans-serif;
+		display: block;
+		font-weight: 300;
+		font-size: 1em;
+		color: #999;
+	}
+/*image iso*/
+#iso{
+	padding-left: 30px;
+}
+/*SiP*/
+#logo-headerr {
+	float: left;
+	padding: 15px 0 35px 140px;
+	text-decoration: none;
+}
+	
+	
+	#logo-headerr .site-namer {
+		display: block;
+		font-weight: 700;
+		font-size: 2em;
+		text-align: center;
+
+	}
+	
+	#logo-headerr .site-descr {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	font-family: "Poppins", Arial, sans-serif;
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 80px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: #0b76a6;
+				}
+	
+
+
+
+/************ 
+//------------------------------
+// CONTENIDO
+//------------------------------
+************/
+#main-content {
+	background: white;
+	width: 90%;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+	#main-content header,
+	#main-content .content {
+		padding: 40px;
+	}
+
+
+ h1{
+	font-size: 24px;
+	color: black; 
+	font-family: "Poppins", Arial, sans-serif;
+	text-align: center;
+}
+/**/
+
+#footer{
+	
+	padding: 20px;	
+	color: white;
+	text-align: center;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #333;
+}
+#footer{
+	font-family: "Poppins", Arial, sans-serif;
+}
+#footer a{
+	color: white;
+}
+
+h2{
+	text-align: center;
+}
+
+form{
+	text-align: center;
+}
+
+.bienvenido {
+  font-variant: small-caps;
+  font-size: 40px;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #686A6B;
+  
+}
+h3{
+	font-family: "Poppins", Arial, sans-serif;
+	text-align: center;
+	font-size: 50px;
+	color: #686A6B;
+}
+
+
+.fila{
+	font-family: "Poppins", Arial, sans-serif;
+	display: inline-block;
+	margin: auto;
+	width: 30%;
+	text-align: center;
+}
+
+#cate img{
+	border-radius: 50%;
+	border-color: black;
+}
+
+#cate{
+	font-family: "Poppins", Arial, sans-serif;
+	text-align: center;	
+}
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
+
+#contac{
+
+	background-color:#323131 !important ;
+	display:inline-block;
+	margin:0;
+	padding:15px 20px;
+	font-size:32px;
+	color:#fff;
+	text-align: center;
+
+}
+
+#contac1{
+	color: white;
+}
+
+#des {
+	text-align: center;
+}
+
+
+
+
+
+
+/*Registro*//*
+@import "compass/css3";
+
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+.form {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+.tab-content > div:last-child {
+  display:none;
+}
+
+
+
+
+label {
+  position:absolute;
+  transform:translateY(6px);
+  left:13px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+
+/*registro_Termina*/
